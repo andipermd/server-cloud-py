@@ -1,0 +1,21 @@
+# Virtual environment
+venv/
+.venv/
+myenv/
+
+# Byte-compiled / binary files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables
+.env
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Logs & Database
+*.log
+*.sqlite3
