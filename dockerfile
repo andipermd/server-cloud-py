@@ -6,7 +6,7 @@ WORKDIR /app
 # Buat virtual environment
 RUN python -m venv /app/myvenv
 
-# Set environment variable untuk menggunakan virtual environment
+# Set environment variable untuk menggunakan virtual environmen
 ENV PATH="/app/myvenv/bin:$PATH"
 
 # Copy requirements.txt dan install dependencies
