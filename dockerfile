@@ -18,4 +18,4 @@ RUN pip install --upgrade pip && \
 COPY . .
 
 # Jalankan aplikasi dengan uvicorn
-CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
+CMD ["/opt/venv/bin/uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080"]
