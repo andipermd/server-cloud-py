@@ -1,5 +1,4 @@
-# Gunakan image Python yang sesuai
-FROM python:3.11.7
+FROM python:3.11-slim
 
 # Install dependencies sistem yang diperlukan oleh Rasterio
 RUN apt-get update && apt-get install -y \
