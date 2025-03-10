@@ -1,8 +1,12 @@
 # Gunakan image Python yang sesuai
 FROM python:3.11.7
 
-# Install dependencies sistem yang diperlukan
-RUN apt-get update && apt-get install -y libexpat1
+# Install dependencies sistem yang diperlukan oleh Rasterio
+RUN apt-get update && apt-get install -y \
+    libexpat1 \
+    libgdal30 \
+    gdal-bin \
+    && rm -rf /var/lib/apt/lists/*
 
 # Atur direktori kerja di dalam container
 WORKDIR /app
